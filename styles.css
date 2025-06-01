@@ -3,6 +3,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.abel-regular {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
     font-family: 'norsebold';
@@ -12,6 +17,8 @@
     font-style: normal;
 
 }
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -24,7 +31,7 @@
     height: 100vh;
 }
 .left-bg-wrapper {
-    width: 35%;
+    width: 30%;
     background-color: blueviolet;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
@@ -48,7 +55,7 @@
 /* right div */
 
 .right-form-wrapper{
-    width:65%;
+    width:70%;
     display: flex;
     flex-direction: column;
     background-color: rgb(238, 238, 238);
@@ -63,27 +70,9 @@
     max-width: 60%;
     font-size: 1.2rem;
 }
-
-label,input{
-    display: flex;
-    flex-direction: column;
+.text p+p{
+    padding-top: 30px;   
 }
-
-
-.form-wrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 15%;
-
-}
-
-.left-input,.right-input{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-}
-
 .right-mid{
     padding: 20px 40px;
     background-color: white;
@@ -92,4 +81,49 @@ label,input{
 .right-mid p {
     padding-bottom: 30px;
     font-size: 1.3rem;
+}
+
+label,input{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:400;
+    color: rgb(65, 66, 69);
+    width: 170px;
+    
+}
+input {
+    box-shadow: 0px 2px 5px -2px;
+    padding: 10px;
+    height: 20px;
+    outline: none;
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border:1px solid blue;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+
+}
+
+.left-input,.right-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 }
