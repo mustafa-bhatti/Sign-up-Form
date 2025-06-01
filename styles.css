@@ -3,9 +3,41 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold_1-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Cal Sans",'Times New Roman', Times, serif;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+}
+.left-bg-wrapper {
+    width: 35%;
+    background-color: blueviolet;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.black-bar {
+    background-color: rgba(0, 0, 0, 0.538);
+    width: 100%;
+    height: 150px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
 }
